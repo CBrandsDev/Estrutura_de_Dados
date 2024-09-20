@@ -1,5 +1,9 @@
 from time import sleep
 
+class client:
+    def __init__(self):
+        pass
+
 def calculator():
     hours = float(input("type the study hours: "))
     videos = float(input("how many videos do you watch: "))
