@@ -1,8 +1,6 @@
 from time import sleep
 
-class client:
-    def __init__(self):
-        pass
+    
 
 def calculator():
     hours = float(input("type the study hours: "))
@@ -16,7 +14,7 @@ def calculator():
 
     print("You see a " + str(mV) + " video per hour studied")
     print("You read a " + str(mB) + " book per hour studied")
-    print("You write a " + str(mB) + " line codes per hour studied")
+    print("You write a " + str(mC) + " line codes per hour studied")
 
 def print_hi(name):
 
@@ -51,9 +49,14 @@ def print_hi(name):
 
     print(f'Hi, {"Calil"}')
 
-
-if __name__ == '__main__':
-    calculator()
-    print_hi('PyCharm')
+class Main:
+    pass
+    from Client import Client
+    c1 = Client("Calil", "999879")
+    print(c1.name)
+    print(c1.number)
+    if __name__ == '__main__':
+        calculator()
+        print_hi('PyCharm')
 
 
