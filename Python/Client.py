@@ -1,5 +1,7 @@
 class Client:
 
+    print("Only test")
+
     def __init__(self, n, num):
         self._name = n
         self._number=num
