@@ -21,7 +21,7 @@ class Pile:Stackable {
     override fun spy(): Any? {
         var topData: Any? = null
         if(!itsEmpty()) {
-            plates[topPointer] = topData
+            topData = plates[topPointer]
         } else {
             println("The stack is empty")
         }
@@ -37,7 +37,7 @@ class Pile:Stackable {
     override fun unstack(): Any?{
         var topData: Any? = null
         if(!itsEmpty()) {
-            plates[topPointer] = topData
+            topData = plates[topPointer]
             topPointer--
         } else {
             println("The stack is empty")
@@ -51,9 +51,9 @@ class Pile:Stackable {
         var result: String = "["
         for(i in topPointer downTo 0) {
             if(i == 0) {
-                result = "${plates[i]}"
+                result += "${plates[i]}"
             } else {
-                result = "${plates[i]}, "
+                result += "${plates[i]}, "
             }
         }
         return "$result]"
