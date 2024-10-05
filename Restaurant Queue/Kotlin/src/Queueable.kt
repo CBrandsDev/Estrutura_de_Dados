@@ -1,3 +1,4 @@
+package queue
 interface Queueable {
     // Main Methods
     fun enqueue(data: Any?) 
