@@ -1,6 +1,6 @@
 public interface Heapifiable {
-    void insert(Object data); // Create
-    Object extract();  // Delete
+    void insert(Object data); 
+    Object extract();  
     Object obtainRoot();
 
     String print();
